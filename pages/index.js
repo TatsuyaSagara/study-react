@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Links } from '../components/links.js'
 import { Footer } from '../components/footer.js'
+import { Headline } from '@/components/headline.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,10 +19,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <p>
-            Index Pages&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
+          <Headline page='index'/>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
