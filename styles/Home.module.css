@@ -227,10 +227,3 @@
     transform: rotate(0deg);
   }
 }
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 2rem;
-  text-transform: capitalize;
-}
