@@ -1,21 +1,17 @@
-import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import Image from "next/image";
+import styles from "@/styles/Home.module.css";
 
 export function Headline(props) {
-  console.log(props.title);
   return (
     <div className={styles.description}>
-      <p>
-        Get started by editing&nbsp;
-        <code className={styles.code}>pages/{props.page}.js</code>
-      </p>
+      <p>Get started by editing {props.children}</p>
       <div>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          By{' '}
+          By{" "}
           <Image
             src="/vercel.svg"
             alt="Vercel Logo"
@@ -27,5 +23,5 @@ export function Headline(props) {
         </a>
       </div>
     </div>
-  )
+  );
 }
